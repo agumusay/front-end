@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+}
+.card {
+  border-radius: 10px;
+  position: relative;
+  width: 400px;
+  height: 442px;
+}
+.header {
+  background: linear-gradient(278.9deg, #ff00e5 -46.53%, #ff8a00 122.31%);
+  border-radius: 10px 10px 0px 0px;
+  height: 147px;
+  padding-left: 32px;
+}
+h5 {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  width: 57px;
+  height: 26px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+h4 {
+  position: absolute;
+  top: 90px;
+  font-size: 32px;
+  line-height: 37px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.card-body {
+  display: flex !important;
+  flex-direction: column;
+  width: 400px;
+  align-items: center;
+}
+.card-text {
+  justify-self: center;
+  font-size: 18px;
+  padding: 5px;
+  color: #444444;
+}
+.alt {
+  align-self: baseline;
+  padding-left: 5px;
+  color: #444444;
+}
+.prices {
+  display: inline;
+  align-self: flex-end;
+  line-height: 0px;
+}
+.ten,
+.hundred {
+  align-self: flex-end;
+  margin: 0;
+  padding: 0;
+}
+.ten {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 49px;
+  color: #444444;
+}
+.hundred {
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 49px;
+  color: #cacaca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration-style: dashed;
+  position: relative;
+}
+
+.line1 {
+  width: 181px;
+  border-top: 3px solid #cacaca;
+  position: absolute;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 400px;
+  height: 51px;
+  background-color: #ffeadf;
+  bottom: 0;
+  position: absolute;
+  border-radius: 0px 0px 10px 10px;
+  padding: 0px 15px;
+  color: #444444;
+}
+
+.line2 {
+  width: 16px;
+  height: 0px;
+  border: 1px solid #555555;
+  transform: rotate(90deg);
+}

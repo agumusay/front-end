@@ -1,0 +1,16 @@
+//center with flex
+@mixin center-child-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin center-single {
+  position: relative;
+  &:first-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,243 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+  font-size: 1.5rem;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  display: grid;
+  grid-template: repeat(9, 1fr) / repeat(9, 1fr);
+  grid-gap: 10px;
+  grid-template-areas:
+    ". . . . . . . . ."
+    ". . . . . . . . ."
+    ". . . . . . . . ."
+    ". . . a b c . . ."
+    ". . . d e f . . ."
+    ". . . g h i . . ."
+    ". . . . . . . . ."
+    ". . . . . . . . ."
+    ". . . . . . . . .";
+    animation: grid-change 15s ease-in-out infinite;
+    transition: all 0.3s ease-in-out;
+}
+
+div {
+  background-color: cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 0px rgb(82, 82, 82),
+  2px 2px 0px rgb(82, 82, 82),
+  3px 3px 0px rgb(82, 82, 82);
+  transition: all 0.3s ease-in-out;
+  
+  
+  
+}
+
+p{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.box-1 {
+  grid-area: a;
+  background-color: midnightblue;
+  
+}
+
+.box-2 {
+  grid-area: b;
+  background-color: darkred;
+}
+
+.box-3 {
+  grid-area: c;
+  background-color: dark
+}
+
+.box-4 {
+  grid-area: d;
+  background-color: darkgreen;
+}
+
+.box-5 {
+  grid-area: e;
+  background-color: darkmagenta;
+}
+
+.box-6 {
+  grid-area: f;
+  background-color: darkslategrey;
+}
+
+.box-7 {
+  grid-area: g;
+  background-color: darksalmon;
+}
+
+.box-8 {
+  grid-area: h;
+  background-color: darkgoldenrod;
+}
+
+.box-9 {
+  grid-area: i;
+  background-color: darkcyan;
+}
+
+
+@keyframes grid-change {
+    9%{
+            grid-template-areas:
+    ". . . . . . . . ."
+    ". . . . . . . . ."
+    ". . . . b . . . ."
+    ". . a a b c c . ."
+    ". d d d e f f f ."
+    ". . g g h i i . ."
+    ". . . . h . . . ."
+    ". . . . . . . . ."
+    ". . . . . . . . .";
+    }
+
+    18%{
+        grid-template-areas:
+". . . . . . . . ."
+". . . . . c c . ."
+". a a a a c c . ."
+". a a a a c c . ."
+". . d d e f f f ."
+"b b d d i i i i i"
+". . g g h h h h ."
+". . g g h h h h ."
+". . g g h h h h .";
+}
+
+27%{
+    grid-template-areas:
+". a a a a . . . ."
+". . . . b b b b ."
+". c c c c . . . ."
+". . . . d d d d ."
+". e e e e . . . ."
+". . . . f f f f ."
+". g g g g . . . ."
+". . . . h h h h ."
+". i i i i . . . .";
+}
+
+36%{
+    grid-template-areas:
+"a a a a a b b b b"
+"a a a a a b b b b"
+"c c c c d d d d d"
+"c c c c d d d d d"
+"e e e e e f f f f"
+"e e e e e f f f f"
+"g g g g h h h h h"
+"g g g g h h h h h"
+"i i i i i i i i i";
+}
+
+45%{
+    grid-template-areas:
+"a a a a a a a a a"
+"b b b b b b b b b"
+"c c c c c c c c c"
+"d d d d d d d d d"
+"f f f f f f f f f"
+"g g g g g g g g g"
+"e e e e e e e e e"
+"h h h h h h h h h"
+"i i i i i i i i i";
+}
+
+54%{
+    grid-template-areas:
+"a . . . . b . . ."
+"a e e . . b . . ."
+"a e e c c c c c c"
+"a e e . d d f f f"
+"a e e . d d f f f"
+". e e . . . f f f"
+". . g g g g h h ."
+"i i i i i . h h ."
+"i i i i i . h h .";
+}
+
+63%{
+    grid-template-areas:
+"a e i g d b h c f"
+"a e i g d b h c f"
+"a e i g d b h c f"
+"a e i g d b h c f"
+"a e i g d b h c f"
+"a e i g d b h c f"
+"a e i g d b h c f"
+"a e i g d b h c f"
+"a e i g d b h c f";
+}
+
+72%{
+    grid-template-areas:
+"a b b b b b b b b"
+"a e f f f f f f c"
+"a e i . . . . g c"
+"a e i . . . . g c"
+"a e i . . . . g c"
+"a e i . . . . g c"
+"a e i . . . . g c"
+"a e h h h h h g c"
+"a d d d d d d d c";
+}
+
+81%{
+    grid-template-areas:
+"i . . . . . . . h"
+"i f . . . . . g h"
+"i f e . . . d g h"
+"i f e b . c d g h"
+"i f e b a c d g h"
+"i f e b . c d g h"
+"i f e . . . d g h"
+"i f . . . . . g h"
+"i . . . . . . . h";
+}
+
+
+90%{
+    grid-template-areas:
+"a a a b b b c c c"
+"a a a b b b c c c"
+"a a a b b b c c c"
+"d d d e e e f f f"
+"d d d e e e f f f"
+"d d d e e e f f f"
+"g g g h h h i i i"
+"g g g h h h i i i"
+"g g g h h h i i i";
+}
+}

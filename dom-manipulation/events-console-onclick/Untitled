@@ -1,0 +1,8 @@
+# Adding and removing event handlers
+
+Add an event listener to a button.
+The click handler should print to the console the element that was clicked and its inner text.
+
+Extra (Option 1): After 5 seconds remove the event listener. Now on click, nothing should be printed to the console.
+
+Extra (Option 2): Add a second button that when clicked removes the event listener from the 1st button.
