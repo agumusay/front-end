@@ -18,7 +18,32 @@ canvas.addEventListener("mousedown", event => {
   isDrawing = true;
 });
 
+let width;
+let hue;
+let result = 1;
+let step = 1;
+let result2 = 1;
+let step2 = 1;
+let upDown = upperLimit => {
+  let floor = 1;
+  result += step;
+  if (result === upperLimit || result === floor) {
+    step = -step;
+  }
+  return result;
+};
+let upDown2 = upperLimit2 => {
+  let floor = 1;
+  result2 += step2;
+  if (result2 === upperLimit2 || result2 === floor) {
+    step2 = -step2;
+  }
+  return result2;
+};
 canvas.addEventListener("mousemove", event => {
+  width = upDown(30);
+  hue = upDown2(360);
+
   if (isDrawing === true) {
     drawLine(
       context,
@@ -51,7 +76,7 @@ function drawLine(context, x1, y1, x2, y2) {
   context.beginPath();
   context.lineCap = "round";
   context.strokeStyle = colorPicker.value;
-  context.lineWidth = 5;
+  context.lineWidth = 20;
   context.moveTo(x1, y1);
   context.lineTo(x2, y2);
   context.stroke();

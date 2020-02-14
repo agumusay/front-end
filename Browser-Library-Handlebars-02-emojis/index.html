@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Handlebars 02</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js"></script>
+  </head>
+  <body>
+    <section id="output"></section>
+
+    <script id="emoji-template" type="text/x-handlebars-template">
+            <h3>Emojis</h3>
+                <ul>
+                   {{#each emojiParsed}}
+        <li>{{@key}} value</li>
+      {{/each}}
+                        </ul>
+    </script>
+
+    <script src="/index.js"></script>
+  </body>
+</html>

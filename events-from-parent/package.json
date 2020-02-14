@@ -1,0 +1,13 @@
+{
+  "name": "events-from-parent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "watch-styles": "node-sass -w sass -o styles",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
