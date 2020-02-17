@@ -200,12 +200,12 @@ var tvShows = [
     officialSite: "https://www.netflix.com/title/80025172"
   }
 ];
-let stringed = JSON.stringify(tvShows);
-let parsed = JSON.parse(stringed);
+
+
 let output = document.getElementById("series-template").innerHTML;
 
 let template = Handlebars.compile(output);
-console.log(template);
-let outputData = template(parsed);
+console.log(template(tvShows))
+let outputData = template({ tvShows });
 
 document.getElementById("output").innerHTML += outputData;

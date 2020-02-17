@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.js"></script>
-    <title>Handlebars: TV Series</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Handlebars: TV Series</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.js"></script>
+  <link rel="stylesheet" href="/main.css">
 
-  <body>
-    <section class="container">
-      <h1 class="text-center">TV Series</h1>
-      <section id="output"></section>
-    </section>
+</head>
 
-    <footer>
-      <p>
-        Icons made by
-        <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a>
-        from
-        <a href="https://www.flaticon.com/" title="Flaticon">
-          www.flaticon.com</a
-        >
-      </p>
-      <p>
-        Icons made by
-        <a href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan"
-          >Darius Dan</a
-        >
-        from
-        <a href="https://www.flaticon.com/" title="Flaticon">
-          www.flaticon.com</a
-        >
-      </p>
-    </footer>
+<body>
+  <section class="container">
+    <h1 class="text-center">TV Series</h1>
+    <section id="output"></section>
+  </section>
 
-    <script id="series-template" type="text/x-handlebars-template">
+  <footer>
+    <p>
+      Icons made by
+      <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a>
+      from
+      <a href="https://www.flaticon.com/" title="Flaticon">
+        www.flaticon.com</a>
+    </p>
+    <p>
+      Icons made by
+      <a href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a>
+      from
+      <a href="https://www.flaticon.com/" title="Flaticon">
+        www.flaticon.com</a>
+    </p>
+  </footer>
 
-      {{each tvShows}}
-        <section>
+  <script id="series-template" type="text/x-handlebars-template">
+
+        <main>
+          
+      {{#each tvShows}}
+        <section id="card">
             <img src="{{image.medium}}">
             <div class="right-container">
                 <div class="right-up">
@@ -55,7 +55,9 @@
             </footer>
         </section>
       {{/each}}
+      </main>
     </script>
-    <script src="/data.js"></script>
-  </body>
+  <script src="/data.js"></script>
+</body>
+
 </html>

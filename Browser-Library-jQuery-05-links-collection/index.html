@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.js"></script>
+
+    <link rel="stylesheet" href="index.css">
+    <title>jQuery: Links collection</title>
+</head>
+
+<body>
+
+
+    <section class="hero">
+        <section class="content-container two-panel">
+            <h1 class="hero-title">Link Collection</h1>
+
+            <form>
+                <div class="form-element">
+                    <label for="">Title</label>
+                    <input type="text" name="title">
+                </div>
+
+                <div class="form-element">
+                    <label for="">Description</label>
+                    <input type="text" name="description">
+                </div>
+
+                <div class="form-element">
+                    <label for="">Link</label>
+                    <input type="text" name="link">
+                </div>
+
+                <div class="buttons-container">
+                    <button type="reset" class="button button--secondary">Clear</button>
+                    <button class="button">Add link</button>
+                </div>
+            </form>
+        </section>
+    </section>
+    <script id="data-template" type="text/x-handlebars-template">
+            <li>
+                <h3>{{dataObj.title}} </h3>
+                <p>{{dataObj.description}}</p>
+                <a href="">{{dataObj.link}}</a>
+            </li>
+        </script>
+
+    <section class="content-container">
+        <ul class="link-list"></ul>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>

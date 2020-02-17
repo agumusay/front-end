@@ -64,6 +64,8 @@ width: 600px;
 }
 
 .active-tab{
+   
     visibility: visible;
     opacity: 1;
+    transition: all 1s linear;
 }
